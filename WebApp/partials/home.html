@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="WebApp">
+<head>
+    <title></title>
+</head>
+<body id="home">
+      <div id="popup1" ng-show="loading" class="overlay">
+      <div class="popup">
+      <a class="close" href="#popup1">&times;</a>
+        <div class="content">
+            <img src="stylesheet/img/preloader.gif">
+        </div>
+      </div>
+      </div>
+
+        
+          <div class="modal-content header">
+	     <div class="modal-header">
+		   <h1 class=""><img src="stylesheet/img/body2.png"></h1>
+		  </div>
+		   <div class="modal-body">
+		     <form class="form-inline" ng-controller="searchController" ng-submit="submit()">
+			   <div class="form-group">
+			     <input type="text" id="input1" class="form-control input-lg" placeholder="Enter Search String..." ng-model="name" required="required"/>
+                 <input type="submit" id="submit1" class="btn btn-block btn-large ptn-primary" value="submit" id="submit"/>
+			    </div>
+			
+			  </form>
+			 </div>
+                 
+                <my-widget></my-widget>
+                  
+                  
+                
+		</div>
+       
+     
+    
+          
+          
+</body>
+</html>

@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="WebApp">
+<head>
+    <title></title>
+</head>
+
+<body>
+   <div id="popup1" ng-show="loading" class="overlay">
+      <div class="popup">
+      <a class="close" href="#popup1">&times;</a>
+        <div class="content">
+            <img src="stylesheet/img/preloader.gif">
+        </div>
+      </div>
+      </div>
+       
+       <div class="modal hide fade modal-dialog" id="myModal">
+	   <div class="modal-content">
+	     <div class="modal-header">
+		   <h1 class="text-center">WebApp</h1>
+		  </div>
+		   <div class="modal-body">
+		     <form class="col-md-12 center-block" ng-controller="searchController" ng-submit="submit()" id="form">
+			   <div class="form-group">
+			     <input type="text" id="input" class="form-control input-lg" placeholder="Whom are you looking for?" ng-model="name" required="required"/>
+			    </div>
+				<div class="form-group">
+					<input type="submit" class="btn btn-block btn-large ptn-primary" value="submit" id="submit"/>
+				</div>
+			  </form>
+			 </div>
+		</div>
+	</div>
+    <section class="hero-unit">
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <a href="index.html#/" class="brand">WebApp</a>
+                </div>
+            </div>
+            <div id="bannerCarousel" class="carouselBanner slide">
+				<div class="carousel-inner">
+					<div class="active item">
+						<div class="hero-unit-inner text-center">
+							<h1>"Boundaries can be negotiated..."</h1>
+                            <img src="stylesheet/img/line.png"></img>
+							<h4>Looking for someone? Let us help you find them...</h4>
+					
+						</div>
+					</div>
+                    	<div class="item">
+						<div class="hero-unit-inner text-center">
+							<h1>"Scooby dooby dooo..."</h1>
+                            <img src="stylesheet/img/line.png"></img>
+							<h4>Looking for someone? Let us help you find them...</h4>
+							
+						</div>
+					</div>
+						<div class="item">
+						<div class="hero-unit-inner text-center">
+							<h1>"O Capt'n My Capt'n..."</h1>
+                            <img src="stylesheet/img/line.png"></img>
+							<h4>Looking for someone? Let us help you find them...</h4>
+							
+						</div>
+					</div>
+					<div class="item">
+						<div class="hero-unit-inner text-center">
+							<h1>"Whiskey in the jar-o..."</h1>
+                            <img src="stylesheet/img/line.png"></img>
+							<h4>Looking for someone? Let us help you find them...</h4>
+							
+						</div>
+					</div>
+					
+					<div class="item">
+						<div class="hero-unit-inner text-center">
+							<h1>"The man who sold the world..."</h1>
+                            <img src="stylesheet/img/line.png"></img>
+							<h4>Looking for someone? Let us help you find them...</h4>
+						</div>
+					</div>
+                    	<div class="item">
+						<div class="hero-unit-inner text-center">
+							<h1>"seize the day..."</h1>
+                            <img src="stylesheet/img/line.png"></img>
+							<h4>Looking for someone? Let us help you find them...</h4>
+							
+						</div>
+					</div>
+                    <div class="item">
+						<div class="hero-unit-inner text-center">
+							<h1>"Currahee..."</h1>
+                            <img src="stylesheet/img/line.png"></img>
+							<h4>Looking for someone? Let us help you find them...</h4>
+							
+						</div>
+					</div>
+				</div>
+			
+			</div>
+            <div class="hero-unit-inner text-center">
+              <button type="button" class="btn btn-large btn-primary" data-toggle="modal" href="#myModal">Launch search..</button>
+            </div>
+        </div>
+    </section>
+
+  <script type="text/javascript">
+      $('#form').on('submit', function () {
+            $('#myModal').modal('hide');
+      }); 
+</script>
+<script type="text/javascript">
+    $(function () {
+        $('.carouselBanner').carousel();
+    });
+</script>
+</body>
+</html>
