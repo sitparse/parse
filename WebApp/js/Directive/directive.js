@@ -65,7 +65,7 @@ myApp.directive('myWidget', function (parseService) {
                     google.maps.event.addListener(marker, "click", (function (marker, i) {
                         return function () {
                             var userData = "FirstName: " + scope.data[i].get("FirstName")
-                            + "<br />" + "LastName: " + scope.data[i].get("LastName") + "<br />" + "Address: " + $scope.data[i].get("Address")
+                            + "<br />" + "LastName: " + scope.data[i].get("LastName") + "<br />" + "Address: " + scope.data[i].get("Address")
                             + "<br />" + "Email: " + scope.data[i].get("Email")
                             + "<br />" + "Phone: " + scope.data[i].get("PhoneNumber");
                             infoWindow.setContent(
